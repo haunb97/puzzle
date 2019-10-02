@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>puzzle</title>
+</head>
+<body >
+<center>
+    <img src="a1.jpg" onclick="click_image(this)" id="a" width=200" height="100" name="image" alt='' ><br />
+    <img src="b1.jpg" onclick="click_image(this)" id="b" width=200" height="100" name="image" alt='' ><br />
+    <img src="c1.jpg" onclick="click_image(this)" id="c" width=200" height="100" name="image" alt='' ><br />
+
+</center>
+
+<script>
+   function click_image(num) {
+       let random = (Math.floor(Math.random()*3)+1);
+       let pic = num.getAttribute('id');
+       num.src = pic + random + '.jpg'
+   }
+
+</script>
+</body>
+</html>
